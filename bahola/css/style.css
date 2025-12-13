@@ -1,5 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap");
+
 :root {
-  --accent_clr: #1177fe;
+  --accent_clr: #65d9a8;
+  --accent_drk: #166342;
+
   --padding: 60px;
 
   --red: #f35c5b;
@@ -13,6 +17,7 @@
   padding: 0;
   box-sizing: border-box;
   transition: 0.3s all ease;
+  font-family: "Funnel Display", sans-serif;
 }
 
 body {
@@ -20,8 +25,6 @@ body {
   place-content: center;
   min-height: 100vh;
   background: linear-gradient(to bottom, #fff, var(--accent_clr) 150%);
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 a {
@@ -89,35 +92,44 @@ form button:hover {
   flex-direction: column;
   gap: 1rem;
   padding: 30px var(--padding);
-  background: #eee;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  background: linear-gradient(-65deg, #eee, var(--accent_clr));
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.userProfiletext {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .userInfoContainer > h1 {
   font-weight: 400;
   font-size: 1.5rem;
-
-  border-left: 5px solid var(--accent_clr);
-  padding-left: 5px;
 }
 
 .infoWrapper {
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: 1.2rem;
 }
 .infoWrapper > img {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   object-fit: cover;
   border-radius: 50%;
   overflow: hidden;
-  background: #7d7d7d;
+  background: #fff;
 }
 
 .infoText {
   display: flex;
   flex-direction: column;
+}
+
+.infoText h1 {
+  font-size: 2.2rem;
 }
 
 .infoText p {
@@ -131,18 +143,59 @@ form button:hover {
 }
 
 .infoText ul button {
-  padding: 6px 25px;
+  padding: 8px 35px;
   border-radius: 8px;
   background: var(--accent_clr);
   border: none;
   color: #fff;
   font-weight: 600;
   cursor: pointer;
+  font-size: 1rem;
+}
+
+.infoText ul button:hover {
+  background: var(--green);
 }
 
 .infoText ul button:last-child {
   background: #fff;
   color: var(--accent_clr);
+}
+
+.infoText ul button:last-child:hover {
+  background: #eee;
+}
+
+.userStatsCard {
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
+  border-radius: 20px;
+  background: linear-gradient(65deg, var(--accent_clr), var(--accent_drk) 120%);
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.userStatsCard h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  letter-spacing: -1px;
+  margin-top: -10px;
+}
+
+.userStatsCard p {
+  opacity: 0.7;
+}
+
+.userStatsCard select {
+  appearance: none;
+  width: fit-content;
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
 }
 
 .title {
@@ -154,7 +207,7 @@ form button:hover {
   font-weight: 400;
   font-size: 1.8rem;
   padding-left: 5px;
-  border-left: 5px solid var(--accent_clr);
+  border-left: 10px solid var(--accent_clr);
 }
 
 .topRatedSlider {
@@ -162,6 +215,11 @@ form button:hover {
   height: fit-content;
   padding: 10px var(--padding) 30px;
   overflow-x: scroll;
+  mask-image: linear-gradient(to right, #000 90%, #0000 99%);
+}
+
+.topRatedSlider::-webkit-scrollbar {
+  display: none;
 }
 
 .sliderWrapper {
@@ -206,7 +264,7 @@ form button:hover {
   aspect-ratio: 1;
   border-radius: 50%;
   overflow: hidden;
-  background: #0005;
+  background: #0002;
 }
 
 .sliderCard ul h1 {
@@ -236,3 +294,120 @@ form button:hover {
   color: #fff;
   font-weight: 700;
 }
+
+section#table {
+  width: 100%;
+  padding: 0 var(--padding) 30px;
+}
+
+section#table table {
+  border: 1px solid #0005;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #0001;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+  color: #0008;
+}
+
+section#table table thead {
+  background: #eee;
+  color: #000;
+  font-weight: 600;
+}
+
+section#table table thead td {
+  padding: 15px 10px;
+}
+
+section#table table tbody td {
+  padding: 5px 10px;
+}
+
+section#table table tr:hover {
+  color: #000;
+  scale: 1.02;
+}
+
+section#table table tbody tr td:first-child {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+section#table table tbody td > img {
+  width: 50px;
+  height: 50px;
+  background: #0005;
+  border-radius: 50%;
+}
+
+section#table table tbody tr:nth-child(even) {
+  background: #eee;
+}
+
+.ratingWrapper {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.ratingCard {
+  height: 50px;
+  aspect-ratio: 1;
+  border-radius: 10px;
+  display: grid;
+  place-content: center;
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 700;
+  background: #9f9f9f;
+  scale: 0.95;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+table td > .ratingCard.red,
+table tbody tr:hover .ratingWrapper .ratingCard.red {
+  background: var(--red);
+}
+
+table td > .ratingCard.yellow,
+table tbody tr:hover .ratingWrapper .ratingCard.yellow {
+  background: var(--yellow);
+}
+
+table td > .ratingCard.blue,
+table tbody tr:hover .ratingWrapper .ratingCard.blue {
+  background: var(--blue);
+}
+
+table td > .ratingCard.green,
+table tbody tr:hover .ratingWrapper .ratingCard.green {
+  background: var(--green);
+}
+
+table td > .ratingCard.red,
+table td > .ratingCard.yellow,
+table td > .ratingCard.blue,
+table td > .ratingCard.green {
+  opacity: 1;
+}
+
+.ratingCard:hover {
+  scale: 1.1;
+  opacity: 1;
+}
+
+.ratingCard:hover + * {
+  scale: 1;
+  opacity: 0.8;
+}
+.ratingCard:has(+ *:hover) {
+  scale: 1;
+  opacity: 0.8;
+}
+
+/* .item:hover+* {
+
+.item:has(+ *:hover) { */

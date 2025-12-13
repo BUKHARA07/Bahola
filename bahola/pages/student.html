@@ -17,17 +17,32 @@
   <body>
     <div class="userInfoContainer">
       <h1>Student information</h1>
-      <hr />
-      <div class="infoWrapper">
-        <img src="" alt="" />
-        <ul class="infoText">
-          <h1>John Doe</h1>
-          <p>johndoe@gmail.com</p>
-          <ul>
-            <button>Edit</button>
-            <button><a href="../index.html">Log out</a></button>
+      <div class="userProfiletext">
+        <div class="infoWrapper">
+          <img src="../assets/profile.svg" alt="" />
+          <ul class="infoText">
+            <h1>John Doe</h1>
+            <p>johndoe@gmail.com</p>
+            <ul>
+              <button>Edit</button>
+              <button><a href="../index.html">Log out</a></button>
+            </ul>
           </ul>
-        </ul>
+        </div>
+
+        <div class="userStatsCard">
+          <p>Your average rate:</p>
+          <h1>7.4</h1>
+          <select id="subject">
+            <option value="none">
+              Available subjects to rate
+              <img src="../assets/arrow-down.svg" alt="" />
+            </option>
+            <option value="math">Math</option>
+            <option value="art">Art</option>
+            <option value="literature">Literature</option>
+          </select>
+        </div>
       </div>
     </div>
 
@@ -36,7 +51,7 @@
     <div class="topRatedSlider">
       <div class="sliderWrapper">
         <div class="sliderCard blue">
-          <img src="" alt="" />
+          <img src="../assets/profile.svg" alt="" />
           <ul>
             <h1>Miss Johnson</h1>
             <p>Math</p>
@@ -45,7 +60,7 @@
         </div>
 
         <div class="sliderCard green">
-          <img src="" alt="" />
+          <img src="../assets/profile.svg" alt="" />
           <ul>
             <h1>Miss Johnson</h1>
             <p>Math</p>
@@ -54,7 +69,7 @@
         </div>
 
         <div class="sliderCard green">
-          <img src="" alt="" />
+          <img src="../assets/profile.svg" alt="" />
           <ul>
             <h1>Miss Johnson</h1>
             <p>Math</p>
@@ -63,7 +78,7 @@
         </div>
 
         <div class="sliderCard blue">
-          <img src="" alt="" />
+          <img src="../assets/profile.svg" alt="" />
           <ul>
             <h1>Miss Johnson</h1>
             <p>Math</p>
@@ -72,7 +87,7 @@
         </div>
 
         <div class="sliderCard green">
-          <img src="" alt="" />
+          <img src="../assets/profile.svg" alt="" />
           <ul>
             <h1>Miss Johnson</h1>
             <p>Math</p>
@@ -81,6 +96,192 @@
         </div>
       </div>
     </div>
+
+    <div class="title">
+      <h1>Rating</h1>
+    </div>
+    <section id="table">
+      <table>
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Subject</td>
+            <td>Contact</td>
+            <td>Avg Rating</td>
+            <td>Rate (1-10)</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img src="../assets/profile.svg" alt="" />
+              Miss Johnson
+            </td>
+            <td>Mathematics</td>
+            <td>herEmail@gmail.com</td>
+            <td><div class="ratingCard blue">7</div></td>
+            <td>
+              <div class="ratingWrapper">
+                <div class="ratingCard red">1</div>
+                <div class="ratingCard red">2</div>
+                <div class="ratingCard red">3</div>
+                <div class="ratingCard yellow">4</div>
+                <div class="ratingCard yellow">5</div>
+                <div class="ratingCard yellow">6</div>
+                <div class="ratingCard blue">7</div>
+                <div class="ratingCard blue">8</div>
+                <div class="ratingCard green">9</div>
+                <div class="ratingCard green">10</div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="../assets/profile.svg" alt="" />
+              Steve Clark
+            </td>
+            <td>Literature</td>
+            <td>notSuperman@gmail.com</td>
+            <td><div class="ratingCard green">10</div></td>
+            <td>
+              <div class="ratingWrapper">
+                <div class="ratingCard red">1</div>
+                <div class="ratingCard red">2</div>
+                <div class="ratingCard red">3</div>
+                <div class="ratingCard yellow">4</div>
+                <div class="ratingCard yellow">5</div>
+                <div class="ratingCard yellow">6</div>
+                <div class="ratingCard blue">7</div>
+                <div class="ratingCard blue">8</div>
+                <div class="ratingCard green">9</div>
+                <div class="ratingCard green">10</div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="../assets/profile.svg" alt="" />
+              Ahad Wiz
+            </td>
+            <td>Art</td>
+            <td>notlikethat@gmail.com</td>
+            <td><div class="ratingCard red">3</div></td>
+            <td>
+              <div class="ratingWrapper">
+                <div class="ratingCard red">1</div>
+                <div class="ratingCard red">2</div>
+                <div class="ratingCard red">3</div>
+                <div class="ratingCard yellow">4</div>
+                <div class="ratingCard yellow">5</div>
+                <div class="ratingCard yellow">6</div>
+                <div class="ratingCard blue">7</div>
+                <div class="ratingCard blue">8</div>
+                <div class="ratingCard green">9</div>
+                <div class="ratingCard green">10</div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="../assets/profile.svg" alt="" />
+              Arnold Shvartz
+            </td>
+            <td>PE</td>
+            <td>strongguy@gmail.com</td>
+            <td><div class="ratingCard blue">8</div></td>
+            <td>
+              <div class="ratingWrapper">
+                <div class="ratingCard red">1</div>
+                <div class="ratingCard red">2</div>
+                <div class="ratingCard red">3</div>
+                <div class="ratingCard yellow">4</div>
+                <div class="ratingCard yellow">5</div>
+                <div class="ratingCard yellow">6</div>
+                <div class="ratingCard blue">7</div>
+                <div class="ratingCard blue">8</div>
+                <div class="ratingCard green">9</div>
+                <div class="ratingCard green">10</div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="../assets/profile.svg" alt="" />
+              Whigga Bark
+            </td>
+            <td>History</td>
+            <td>noracism@gmail.com</td>
+            <td><div class="ratingCard yellow">5</div></td>
+            <td>
+              <div class="ratingWrapper">
+                <div class="ratingCard red">1</div>
+                <div class="ratingCard red">2</div>
+                <div class="ratingCard red">3</div>
+                <div class="ratingCard yellow">4</div>
+                <div class="ratingCard yellow">5</div>
+                <div class="ratingCard yellow">6</div>
+                <div class="ratingCard blue">7</div>
+                <div class="ratingCard blue">8</div>
+                <div class="ratingCard green">9</div>
+                <div class="ratingCard green">10</div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="../assets/profile.svg" alt="" />
+              Peter Parker
+            </td>
+            <td>Science</td>
+            <td>lostmyjane@gmail.com</td>
+            <td><div class="ratingCard yellow">6</div></td>
+            <td>
+              <div class="ratingWrapper">
+                <div class="ratingCard red">1</div>
+                <div class="ratingCard red">2</div>
+                <div class="ratingCard red">3</div>
+                <div class="ratingCard yellow">4</div>
+                <div class="ratingCard yellow">5</div>
+                <div class="ratingCard yellow">6</div>
+                <div class="ratingCard blue">7</div>
+                <div class="ratingCard blue">8</div>
+                <div class="ratingCard green">9</div>
+                <div class="ratingCard green">10</div>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="../assets/profile.svg" alt="" />
+              Saun Li
+            </td>
+            <td>Janitor</td>
+            <td>whyeading@gmail.com</td>
+            <td><div class="ratingCard green">9</div></td>
+            <td>
+              <div class="ratingWrapper">
+                <div class="ratingCard red">1</div>
+                <div class="ratingCard red">2</div>
+                <div class="ratingCard red">3</div>
+                <div class="ratingCard yellow">4</div>
+                <div class="ratingCard yellow">5</div>
+                <div class="ratingCard yellow">6</div>
+                <div class="ratingCard blue">7</div>
+                <div class="ratingCard blue">8</div>
+                <div class="ratingCard green">9</div>
+                <div class="ratingCard green">10</div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
     <script src="../js/script.js"></script>
   </body>
