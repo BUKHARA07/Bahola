@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bahola</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="./assets/logo icon.png" />
+  </head>
+  <body>
+    <form>
+      <h1>Registration</h1>
+
+      <input type="text" id="name" required placeholder="Your name:" />
+
+      <input type="email" id="email" required placeholder="Your Email:" />
+
+      <input
+        type="password"
+        id="password"
+        required
+        placeholder="Your Password:"
+      />
+
+      <input
+        type="number"
+        id="password"
+        required
+        placeholder="Educaton center ID:"
+      />
+
+      <label for="select">
+        <select id="select">
+          <option value="student">Student</option>
+          <option value="teacher">Teacher</option>
+          <option value="director">Director</option>
+        </select>
+      </label>
+
+      <button><a id="link" href="./pages/student.html">Submit</a></button>
+    </form>
+
+    <script>
+      const select = document.querySelector("select");
+      const link = document.querySelector("#link");
+
+      select.addEventListener("change", () => {
+        if (select.value === "student") {
+          link.href = "./pages/student.html";
+        } else if (select.value === "teacher") {
+          link.href = "./pages/teacher.html";
+        } else if (select.value === "teacher") {
+          link.href = "./pages/director.html";
+        }
+      });
+    </script>
+  </body>
+</html>
