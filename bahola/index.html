@@ -11,25 +11,29 @@
     <form>
       <h1>Registration</h1>
 
-      <label for="name">
-        Your name:
-        <input type="text" id="name" required />
-      </label>
+      <input type="text" id="name" required placeholder="Your name:" />
 
-      <label for="email">
-        Your email:
-        <input type="email" id="email" />
-      </label>
+      <input type="email" id="email" required placeholder="Your Email:" />
 
-      <label for="password">
-        Your password:
-        <input type="password" id="password" />
-      </label>
+      <input
+        type="password"
+        id="password"
+        required
+        placeholder="Your Password:"
+      />
+
+      <input
+        type="number"
+        id="password"
+        required
+        placeholder="Educaton center ID:"
+      />
 
       <label for="select">
         <select id="select">
           <option value="student">Student</option>
           <option value="teacher">Teacher</option>
+          <option value="director">Director</option>
         </select>
       </label>
 
@@ -43,6 +47,8 @@
       select.addEventListener("change", () => {
         if (select.value === "student") {
           link.href = "./pages/student.html";
+        } else if (select.value === "teacher") {
+          link.href = "./pages/teacher.html";
         } else if (select.value === "teacher") {
           link.href = "./pages/teacher.html";
         }
