@@ -7,8 +7,11 @@
   --padding: 60px;
 
   --red: #f35c5b;
+  --lighred:  #fca4a49d;
   --yellow: #fbab12;
+  --lightyellow:#fbd99ba7;
   --blue: #3290ff;
+  --lightblue: #9dc7f795;
   --green: #2dc987;
 }
 
@@ -164,6 +167,12 @@ form button:hover {
   background: #eee;
 }
 
+.userStatsCards{
+  display: flex;
+  gap: 20px;
+}
+
+
 .userStatsCard {
   width: fit-content;
   height: fit-content;
@@ -173,6 +182,13 @@ form button:hover {
   display: flex;
   flex-direction: column;
   color: #fff;
+}
+
+.minStatsCard{
+  background: linear-gradient(65deg, var(--yellow), var(--lightyellow) 120%);
+}
+.maxStatsCard{
+  background: linear-gradient(65deg, var(--blue), var(--lightblue) 120%);
 }
 
 .userStatsCard h1 {

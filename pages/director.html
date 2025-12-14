@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bahola | Teacher</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <title>Bahola | Student</title>
     <link rel="icon" href="./assets/logo icon.png" />
+    <link rel="stylesheet" href="../css/style.css" />
     <style>
       body {
         background: #fff !important;
@@ -16,13 +16,13 @@
   </head>
   <body>
     <div class="userInfoContainer">
-      <h1>Director iormation</h1>
+      <h1>Director  information</h1>
       <div class="userProfiletext">
         <div class="infoWrapper">
           <img src="../assets/profile.svg" alt="" />
           <ul class="infoText">
-            <h1>Peter Parker</h1>
-            <p>lostmyjane@gmail.com</p>
+            <h1>Tom Willson</h1>
+            <p>tomwillson@gmail.com</p>
             <ul>
               <button>Edit</button>
               <button><a href="../index.html">Log out</a></button>
@@ -30,16 +30,125 @@
           </ul>
         </div>
 
-        <div class="userStatsCard">
-          <p>Your average rate:</p>
-          <h1>8.1</h1>
-          <p>Keep it up!</p>
+        <div class="userStatsCards">
+          <div class="userStatsCard minStatsCard">
+            <p>Teacher MIN rate:</p>
+            <h1>4.5</h1>
+            <select id="subject">
+              <option value="none">
+                Available subjects to rate
+                <img src="../assets/arrow-down.svg" alt="" />
+              </option>
+              <option value="math">Math</option>
+              <option value="art">Art</option>
+              <option value="literature">Literature</option>
+            </select>
+          </div>
+  
+          <div class="userStatsCard maxStatsCard">
+            <p>Teacher MAX rate:</p>
+            <h1>8.4</h1>
+            <select id="subject">
+              <option value="none">
+                Available subjects to rate
+                <img src="../assets/arrow-down.svg" alt="" />
+              </option>
+              <option value="math">Math</option>
+              <option value="art">Art</option>
+              <option value="literature">Literature</option>
+            </select>
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="userDashboard">
-
+    <div class="title">
+      <h1>Rating</h1>
     </div>
+    <section id="table">
+      <table>
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Subject</td>
+            <td>Contact</td>
+            <td>Avg Rating</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <img src="../assets/profile.svg" alt="" />
+              Miss Johnson
+            </td>
+            <td>Mathematics</td>
+            <td>herEmail@gmail.com</td>
+            <td><div class="ratingCard blue">7</div></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="../assets/profile.svg" alt="" />
+              Steve Clark
+            </td>
+            <td>Literature</td>
+            <td>notSuperman@gmail.com</td>
+            <td><div class="ratingCard green">10</div></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="../assets/profile.svg" alt="" />
+              Ahad Wiz
+            </td>
+            <td>Art</td>
+            <td>notlikethat@gmail.com</td>
+            <td><div class="ratingCard red">3</div></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="../assets/profile.svg" alt="" />
+              Arnold Shvartz
+            </td>
+            <td>PE</td>
+            <td>strongguy@gmail.com</td>
+            <td><div class="ratingCard blue">8</div></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="../assets/profile.svg" alt="" />
+              Whigga Bark
+            </td>
+            <td>History</td>
+            <td>noracism@gmail.com</td>
+            <td><div class="ratingCard yellow">5</div></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="../assets/profile.svg" alt="" />
+              Peter Parker
+            </td>
+            <td>Science</td>
+            <td>lostmyjane@gmail.com</td>
+            <td><div class="ratingCard yellow">6</div></td>
+          </tr>
+
+          <tr>
+            <td>
+              <img src="../assets/profile.svg" alt="" />
+              Saun Li
+            </td>
+            <td>Janitor</td>
+            <td>whyeading@gmail.com</td>
+            <td><div class="ratingCard green">9</div></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <script src="../js/script.js"></script>
   </body>
 </html>
