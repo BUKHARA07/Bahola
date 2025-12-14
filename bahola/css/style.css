@@ -166,17 +166,30 @@ form button:hover {
   background: #eee;
 }
 
+.userStatsCards{
+  display: flex;
+  gap: 20px;
+}
+
 .userStatsCard {
   width: fit-content;
   height: fit-content;
   padding: 20px;
   border-radius: 20px;
-  background: linear-gradient(65deg, var(--accent_clr), var(--accent_drk) 120%);
+  background: linear-gradient(65deg, var(--accent_drk ), var(--accent_clr) 120%);
+  /* background: linear-gradient(65deg, var(--red), #ffa4a4ab 120%); */
   display: flex;
   flex-direction: column;
   color: #fff;
 }
 
+.min-stats{
+  background: linear-gradient(65deg, var(--yellow), #f1c67477 120%);
+}
+
+.max-stats{
+  background: linear-gradient(65deg, var(--blue), #77a6db70 120%);
+}
 .userStatsCard h1 {
   font-size: 5rem;
   font-weight: 900;
